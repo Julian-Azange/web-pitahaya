@@ -14,10 +14,12 @@
     /*------------------
         Preloader
     --------------------*/
-    $(window).on('load', function () {
+    setTimeout(() => {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
-    });
+    }, 100)
+    // $(window).on('load', function () {
+    // });
 
     /*------------------
         Background Set
@@ -57,8 +59,8 @@
     });
 
     /*------------------
-		Navigation
-	--------------------*/
+        Navigation
+    --------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
